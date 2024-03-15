@@ -1,0 +1,4 @@
+# route all dns requests to the *.consul domain to the CONSUL_DNS_HOST_IP at CONSUL_DNS_HOST_PORT
+server=/consul/$CONSUL_DNS_HOST_IP#$CONSUL_DNS_HOST_PORT
+# route all other dns requests to the DNS_SERVER
+server=$DNS_SERVER
